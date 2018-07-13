@@ -53,14 +53,14 @@ public class Fracao {
 
 
 
-    public static Fracao soma(Fracao fracao1, Fracao fracao2){
-        Fracao fracao = new Fracao((fracao1.getNumerador()+fracao2.getNumerador()),Mmc.mmc(fracao1.getDenominador(), fracao2.getDenominador()));
-        return fracao;
+    public Fracao soma(Fracao fracao){
+        Fracao somaFracao = new Fracao((this.numerador + fracao.getNumerador()),Mmc.mmc(this.denominador, fracao.getDenominador()));
+        return somaFracao;
     }
 
-    public static Fracao multiplicacao(Fracao fracao1, Fracao fracao2){
-        Fracao fracao = new Fracao(fracao1.getNumerador() * fracao2.getNumerador(), fracao1.getDenominador() * fracao2.getDenominador());
-        return fracao;
+    public Fracao multiplicacao(Fracao fracao){
+        Fracao MultiplicaFracao = new Fracao(this.numerador * fracao.getNumerador(), this.denominador() * fracao.getDenominador());
+        return MultiplicaFracao;
     }
     
 }
