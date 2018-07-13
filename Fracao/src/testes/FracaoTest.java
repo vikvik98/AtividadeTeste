@@ -12,7 +12,7 @@ class FracaoTest {
         Fracao fracao1 = new Fracao(4,8);
         Fracao fracao2 = new Fracao(4,8);
 
-        Fracao fracaoResultante = Fracao.soma(fracao1, fracao2);
+        Fracao fracaoResultante = fracao1.soma(fracao2);
 
         assertEquals(fracaoResultante.getFracao(), "8.0/8.0");
 
@@ -24,7 +24,7 @@ class FracaoTest {
         Fracao fracao1 = new Fracao(1,2);
         Fracao fracao2 = new Fracao(2,4);
 
-        Fracao fracaoResultante = Fracao.multiplicacao(fracao1,fracao2);
+        Fracao fracaoResultante = fracao1.multiplicacao(fracao2);
 
         assertEquals(fracaoResultante.getFracao(), "2.0/8.0");
 
